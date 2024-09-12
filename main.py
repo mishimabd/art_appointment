@@ -4,6 +4,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from art_buttons import start_button
 from contacts import our_contacts, how_to_use
 from sections import section_selection, button_click, contact_handler
+from teacher import become_teacher
 
 TELEGRAM_BOT_TOKEN = "7440105099:AAHnLcnOsseDfqWH_F0codMl80TN1o3gmAQ"
 
@@ -18,6 +19,8 @@ def main():
         MessageHandler(filters.TEXT & filters.Regex("^(Как пользоваться ботом 📖)$"), how_to_use))
     application.add_handler(
         MessageHandler(filters.TEXT & filters.Regex("^(Записаться на секцию ✒️)$"), section_selection))
+    application.add_handler(
+        MessageHandler(filters.TEXT & filters.Regex("^(Стать учителем 🧑‍🏫)$"), become_teacher))
 
     application.add_handler(CallbackQueryHandler(button_click))
 

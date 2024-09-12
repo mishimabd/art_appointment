@@ -9,6 +9,7 @@ async def start_button(update: Update, context: CallbackContext) -> None:
         [KeyboardButton("Записаться на секцию ✒️")],
         [KeyboardButton("Как пользоваться ботом 📖")],
         [KeyboardButton("Наши контакты ☎️")],
+        [KeyboardButton("Стать учителем 🧑‍🏫")],
     ]
     reply_markup = ReplyKeyboardMarkup(buttons, resize_keyboard=True)
     await update.message.reply_text(
