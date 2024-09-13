@@ -32,12 +32,12 @@ async def become_teacher(update: Update, context: CallbackContext):
         result = cursor.fetchone()
 
         if result:
-            await update.message.reply_text("You are already registered as a teacher.")
+            await update.message.reply_text("Вы уже являетесь учителем 😊")
         else:
             # Insert the new teacher into the database
             cursor.execute("INSERT INTO teachers (user_id, username) VALUES (%s, %s)", (user_id, username))
             conn.commit()
-            await update.message.reply_text("You have been successfully registered as a teacher.")
+            await update.message.reply_text("Вы успешно зарегистрированы как учитель 😊")
 
         cursor.close()
         conn.close()

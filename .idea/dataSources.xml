@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Talant" uuid="931a7f12-009f-4f20-bb29-cc412061d0b8">
+    <data-source source="LOCAL" name="Talant Bot" uuid="a1bc161d-c0e3-4ac8-a7c7-934e0467f2c6">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://91.147.92.32:5432/postgres</jdbc-url>
+      <jdbc-url>jdbc:postgresql://91.147.92.32:5432/talant</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
