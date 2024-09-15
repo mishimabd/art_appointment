@@ -12,7 +12,7 @@ payment_methods = [
 
 
 async def fetch_sections_from_db():
-    conn = await asyncpg.connect(user='postgres', password='postgres',
+    conn = await asyncpg.connect(user='postgres', password='Lg26y0M@x',
                                  database='talant', host='91.147.92.32')
     sections = await conn.fetch("SELECT name, free_times, address FROM sections")
     await conn.close()

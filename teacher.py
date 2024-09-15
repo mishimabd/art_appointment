@@ -8,7 +8,7 @@ def get_db_connection():
     conn = psycopg2.connect(
         dbname="talant",
         user="postgres",
-        password="postgres",
+        password="Lg26y0M@x",
         host="91.147.92.32",
         port="5432"
     )
