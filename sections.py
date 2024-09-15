@@ -39,7 +39,7 @@ async def button_click(update: Update, context: CallbackContext):
         selected_section_name = query.data.split("_")[1]
         context.user_data['selected_section'] = selected_section_name
 
-        conn = await asyncpg.connect(user='postgres', password='postgres',
+        conn = await asyncpg.connect(user='postgres', password='Lg26y0M@x',
                                      database='talant', host='91.147.92.32')
         section_data = await conn.fetchrow("SELECT address, free_times FROM sections WHERE name=$1",
                                            selected_section_name)
@@ -125,7 +125,7 @@ async def contact_handler(update: Update, context: CallbackContext):
     )
 
     # Connect to the database
-    conn = await asyncpg.connect(user='postgres', password='postgres',
+    conn = await asyncpg.connect(user='postgres', password='Lg26y0M@x',
                                  database='talant', host='91.147.92.32')
 
     # Fetch the teacher_id and user_id of the teacher from the sections and teachers tables
